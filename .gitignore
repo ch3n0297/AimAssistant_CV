@@ -1,0 +1,70 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+cover/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Type checker / lint caches
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Profiling / debugging
+*.prof
+*.log
+*.tmp
+*.bak
+
+# Project outputs
+logs/
+runs/
+*.pt
+*.pth
+*.onnx
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+*.local
