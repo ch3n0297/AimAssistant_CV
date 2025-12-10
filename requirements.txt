@@ -1,0 +1,27 @@
+# Aim Assist System Dependencies
+# Python 3.8+
+
+# Deep Learning
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Image Processing
+opencv-python-headless>=4.8.0  # 使用 headless 版本避免與 PyQt5 衝突
+numpy>=1.24.0
+
+# Screen Capture
+mss>=9.0.0
+
+# Mouse Control
+pyautogui>=0.9.54
+pynput>=1.7.6
+
+# GUI (Overlay)
+PyQt5>=5.15.0
+
+# Configuration
+pyyaml>=6.0
+
+# Logging
+pandas>=2.0.0

@@ -1,0 +1,30 @@
+# Aim Assist System Configuration
+# Version: 2.0
+
+capture:
+  screen_width: 1920          # 固定全螢幕寬度
+  screen_height: 1080         # 固定全螢幕高度
+  target_size: [640, 360]     # 模型輸入尺寸 (16:9)
+
+detection:
+  model_path: "/home/hjc/coSpace/CV_final/ModelTraining/models/enemy_detection_v11n/best.pt"
+  confidence_threshold: 0.1   # 信心閾值 (降低以偵測更多目標)
+  device: "cuda"              # cuda 或 cpu
+
+controller:
+  kp: 0.25                    # 比例係數 (提高，更快追蹤)
+  kd: 0.08                    # 微分係數 (稍高，減少過衝)
+  alpha: 0.7                  # 平滑係數 (降低，更即時反應)
+  dead_zone: 3                # 死區半徑 (像素，縮小更精確)
+  max_speed: 50               # 最大移動速度 (像素/幀，提高)
+
+overlay:
+  enabled: true               # 是否顯示 Overlay
+  show_all_boxes: true        # 顯示所有偵測框
+  show_fps: true              # 顯示 FPS
+  show_latency: true          # 顯示延遲
+
+logging:
+  enabled: true               # 是否啟用日誌
+  output_dir: "./logs"        # 日誌輸出目錄
+  log_interval: 100           # 每 N 幀記錄一次
